@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "position": "doctor"
+    },
+    {
+        "id": 2,
+        "position": "model"
+    },
+    {
+        "id": 3,
+        "position": "policeman"
+    },
+    {
+        "id": 4,
+        "position": "developer"
+    },
+    {
+        "id": 5,
+        "position": "fire fighter"
+    }
+]
