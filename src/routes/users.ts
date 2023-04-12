@@ -10,5 +10,5 @@ router.post('/users', usersController.uploadNewUser)
 router.get('/users/:userId', usersController.getById)
 
 module.exports = {
-    usersRouter: router,
+  usersRouter: router,
 };
