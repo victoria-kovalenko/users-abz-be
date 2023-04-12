@@ -2,11 +2,12 @@
   "name": "users-abz-be",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.ts",
+  "type": "commonjs",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-esm src/server.ts",
+    "start": "ts-node src/server.ts",
     "start:dev": "nodemon src/server.ts"
   },
   "keywords": [],
