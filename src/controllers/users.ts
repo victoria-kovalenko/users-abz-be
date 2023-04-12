@@ -4,7 +4,7 @@ import { getAllUsers, getUserById, uploadUser } from '../services/users'
 import { QueryResult } from 'pg'
 import { QueryError } from 'sequelize'
 import { uploadImage } from '../services/aws';
-import { imageResizer, imageCompressor } from '../services/image'
+import { imageResizer } from '../services/image'
 import { isValidData } from '../helpers/isValidData'
 
 const getAll = async (req: Request, res: Response) => {
@@ -47,7 +47,7 @@ const uploadNewUser = async (req: Request, res: Response) => {
 
 		const resizedImage = await imageResizer(photoFile.filepath);
 
-		const compressedImage = await imageCompressor(resizedImage);
+		const compressedImage = resizedImage.toString('base64');
 
 		const imageUrl = await uploadImage(compressedImage);
 
