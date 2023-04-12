@@ -6,5 +6,5 @@ const positionRouter = Router.Router();
 positionRouter.get('/positions', positionController.getAll);
 
 module.exports = {
-    positionRouter,
+    routerPosition: positionRouter,
 }
