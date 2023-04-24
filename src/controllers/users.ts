@@ -25,7 +25,7 @@ const getById = async (req: Request, res: Response) => {
 
 const uploadNewUser = async (req: Request, res: Response) => {
 	const form = formidable({ multiples: true, maxFileSize: 5 * 1024 * 1024 });
-	form.parse(req, async (err, fields, files) => {
+	form.parse(req, async (err: any, fields: any, files: any) => {
 		if (err) {
 			console.error(err);
 			res.status(500).send(err);
