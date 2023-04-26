@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { positionRouter: routerPosition } = require('./routes/positions');
+const routerPosition  = require('./routes/positions');
 const { usersRouter } = require('./routes/users');
 
 const PORT = 3000;
@@ -11,7 +11,7 @@ app.use(cors());
 
 app.use(usersRouter);
 
-app.use(routerPosition);
+app.use(routerPosition.positionRouter);
 
 app.listen(process.env.PORT || PORT, () => {
   console.log(`API is ready on http://localhost:${PORT}`);
