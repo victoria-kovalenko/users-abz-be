@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const { usersRouter } = require('./routes/Users');
-const { routerPosition } = require('./routes/Positions');
+const { usersRouter } = require('./routes/users');
+const { routerPosition } = require('./routes/positions');
 
 const PORT = 3000;
 
